@@ -11,7 +11,7 @@ readonly SRC_DIR=$(cd $(dirname $0) && pwd)
 readonly COLOR_VARIANTS=("standard" "black" "blue" "brown" "green" "grey" "orange"
                          "pink" "purple" "red" "yellow" "manjaro" "ubuntu")
 readonly BRIGHT_VARIANTS=("" "dark")
-echo ${SRC_DIR}
+echo ${DEST_DIR} >> /tmp/tempfile0051
 if command -v lsb_release &> /dev/null; then
   Distributor_ID=$(lsb_release -i)
   if [[ "${Distributor_ID}" == "Distributor ID:	elementary" || "${Distributor_ID}" == "Distributor ID:	Elementary" ]]; then
